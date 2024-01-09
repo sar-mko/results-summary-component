@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height:100vh;
+    /* padding: 30px; */
+
+}
+/*main container styles*/
+.main-container{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) ) ;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 30px;
+    width: 50%;
+
+}
+.score-cont{
+    border-radius: 100%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width: 200px;
+    height: 180px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+/*main cont element styles*/
+.main-container h3{
+    color: hsla(0, 0%, 80%);
+}
+h1{
+    font-size: 68px;
+
+}
+.score-cont span{
+    color: hsla(0, 0%, 80%);
+}
+h2{
+    padding-bottom: 8px;
+}
+p{
+    color: hsla(0, 0%, 80%);
+    font-size: 17px;
+
+    text-align: center;
+}
+.score-details{
+    text-align: center;
+    padding: 10px;
+}
+/*summary container styles*/
+.summary-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 25px;
+    align-content: stretch;
+
+
+}
+.result-cont{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 12px;
+    margin: 4px 0;
+    background-color: cadetblue;
+    width: 85%;
+    border-radius: 4px;
+    
+
+}
+.result-cont span{
+    margin-left: auto;
+}
+.result-cont h4{
+    padding: 0 7px;
+    font-weight: 500;
+}
+button{
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 50px;
+    color: white;
+    padding: 14px;
+    width: 85%;
+    margin: 10px 0;
+}
+.summary-container h3{
+    margin: 20px 0;
+}
+/*footer styles*/
+.attribution { 
+    font-size: 11px; text-align: center; 
+    align-self: flex-end;
+    justify-self: center;
+
+}
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
+/*mobile styles
+Mobile: 375px
+*/
+
+@media screen and (max-width: 500px) {
+    main{
+     flex-wrap: wrap;
+     padding: 0;
+     align-items:normal;
+    }
+    .main-container{
+        width: 100%;
+       padding-bottom: 0;
+    }
+    .summary-container{
+        width: 100%;
+        padding-top: 0;
+
+    }
+    .score-cont{
+        width: 50%;
+        height: 50%;
+    }
+}
