@@ -6,7 +6,7 @@
 body{
     display: flex;
     flex-direction: column;
-    min-height:100vh;
+    /* min-height:100vh; */
     font-family: 'Hanken Grotesk', sans-serif;
 }
 main{
@@ -17,6 +17,7 @@ main{
     align-items: center;
     min-height:100vh;
     /* padding: 30px; */
+  
 
 }
 /*main container styles*/
@@ -36,8 +37,8 @@ main{
     background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
     width: 200px;
     height: 180px;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 37px 0;
+    margin: 25px 0;
     text-align: center;
 }
 /*main cont element styles*/
@@ -49,7 +50,8 @@ h1{
 
 }
 .score-cont span{
-    color: hsla(0, 0%, 80%);
+    color:hsla(257, 79%, 77%, 60%);
+    font-weight: 700;
 }
 h2{
     padding-bottom: 8px;
@@ -71,19 +73,19 @@ p{
     width: 50%;
     padding: 25px;
     align-content: stretch;
-
+    border-radius: 5%;
+    box-shadow: 10px 0 5px -2px #888;
 
 }
 .result-cont{
     display: flex;
     flex-direction: row;
     padding: 15px 12px;
-    margin: 4px 0;
+    margin: 8px 0;
     background-color: cadetblue;
     width: 85%;
-    border-radius: 4px;
-    
-
+    border-radius: 11px;
+    /* getting dark borders: https://stackoverflow.com/questions/75607228/how-can-you-apply-a-border-to-only-corners-of-a-container-in-css */
 }
 .result-cont span{
     margin-left: auto;
@@ -103,6 +105,35 @@ button{
 .summary-container h3{
     margin: 20px 0;
 }
+
+/*summary box designs*/
+
+.result-cont .result-denom{
+    color:hsl(224, 30%, 60%);
+}
+.result-cont span{
+    color: hsl(224, 30%, 32%);
+    font-weight: 700;
+}
+#reaction{
+    /* hsl(224, 30%, 27%) */
+color: hsl(0, 100%, 45%);
+background-color:hsl(0, 100%, 98%);
+}
+/*hsla(354, 100%, 98%)*/
+#memory{
+color: hsl(39, 100%, 56%);
+background-color: hsla(39, 100%, 98%);
+}
+#verbal{
+color: hsl(166, 100%, 37%);
+background-color: hsla(166, 100%, 98%)
+}
+#visual{
+color: hsl(234, 85%, 45%);
+background-color: hsla(234, 85%, 98%)
+}
+
 /*footer styles*/
 .attribution { 
     font-size: 11px; text-align: center; 
