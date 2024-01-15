@@ -16,9 +16,14 @@ main{
     justify-content: space-evenly;
     align-items: center;
     min-height:100vh;
-    /* padding: 30px; */
-  
-
+}
+.card-container{
+    display: flex;
+    display: flex;
+    background-color: white;
+    box-shadow: 7px 0 12px 3px hsl(221, 100%, 96%);
+    border-radius: 21px;
+    width: 89%;
 }
 /*main container styles*/
 .main-container{
@@ -34,7 +39,7 @@ main{
 }
 .score-cont{
     border-radius: 100%;
-    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 57%, 1));
     width: 200px;
     height: 180px;
     padding: 37px 0;
@@ -72,10 +77,7 @@ p{
     flex-direction: column;
     width: 50%;
     padding: 25px;
-    align-content: stretch;
-    border-radius: 5%;
-    box-shadow: 10px 0 5px -2px #888;
-
+    align-items: center;
 }
 .result-cont{
     display: flex;
@@ -85,7 +87,6 @@ p{
     background-color: cadetblue;
     width: 85%;
     border-radius: 11px;
-    /* getting dark borders: https://stackoverflow.com/questions/75607228/how-can-you-apply-a-border-to-only-corners-of-a-container-in-css */
 }
 .result-cont span{
     margin-left: auto;
@@ -102,8 +103,13 @@ button{
     width: 85%;
     margin: 10px 0;
 }
+button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) ) ;
+    cursor: pointer;
+}
 .summary-container h3{
-    margin: 20px 0;
+    align-self: flex-start;
+    margin: 20px 0 20px 27px;
 }
 
 /*summary box designs*/
@@ -118,20 +124,20 @@ button{
 #reaction{
     /* hsl(224, 30%, 27%) */
 color: hsl(0, 100%, 45%);
-background-color:hsl(0, 100%, 98%);
+background-color:hsl(0, 100%, 96%);
 }
 /*hsla(354, 100%, 98%)*/
 #memory{
 color: hsl(39, 100%, 56%);
-background-color: hsla(39, 100%, 98%);
+background-color: hsla(39, 100%, 96%);
 }
 #verbal{
 color: hsl(166, 100%, 37%);
-background-color: hsla(166, 100%, 98%)
+background-color: hsla(166, 100%, 96%)
 }
 #visual{
 color: hsl(234, 85%, 45%);
-background-color: hsla(234, 85%, 98%)
+background-color: hsla(234, 85%, 96%)
 }
 
 /*footer styles*/
@@ -144,10 +150,8 @@ background-color: hsla(234, 85%, 98%)
 .attribution a { 
         color: hsl(228, 45%, 44%); 
 }
-/*mobile styles
-Mobile: 375px
-*/
 
+/*media screen, responsiveness*/
 @media screen and (max-width: 500px) {
     main{
      flex-wrap: wrap;
@@ -168,3 +172,57 @@ Mobile: 375px
         height: 50%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .summary-container{
+        padding: 25px 0;
+    }
+  }
+
+  @media only screen and (max-width: 520px) and (min-width: 320px){
+    body {
+      background-color: lightpink;
+      
+    }
+    main{
+    }
+    .summary-container{
+        padding: 25px 0;
+        width:100%;
+    }
+    .main-container{
+        width:100%;
+    }
+    .score-cont{
+        width: 184px;
+    }
+    .card-container{
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 320px){
+    body {
+      background-color: lightyellow;
+      
+    }
+    main{
+    }
+    .score-cont{
+        width: 184px;
+    }
+    .summary-container{
+        padding: 25px 0;
+        width:100%;
+    }
+    .main-container{
+        width:100%;
+    }
+    .card-container{
+        flex-direction: column;
+        width: 100%;
+    }
+  }
