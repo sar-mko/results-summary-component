@@ -6,7 +6,6 @@
 body{
     display: flex;
     flex-direction: column;
-    /* min-height:100vh; */
     font-family: 'Hanken Grotesk', sans-serif;
 }
 main{
@@ -25,6 +24,7 @@ main{
     border-radius: 21px;
     width: 89%;
 }
+
 /*main container styles*/
 .main-container{
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) ) ;
@@ -46,13 +46,17 @@ main{
     margin: 25px 0;
     text-align: center;
 }
-/*main cont element styles*/
+
+/*main element styles*/
 .main-container h3{
     color: hsla(0, 0%, 80%);
+    font-weight: 500;
+}
+h3{
+    font-size: 23px;
 }
 h1{
     font-size: 68px;
-
 }
 .score-cont span{
     color:hsla(257, 79%, 77%, 60%);
@@ -60,17 +64,18 @@ h1{
 }
 h2{
     padding-bottom: 8px;
+    font-size: 28px;
 }
 p{
     color: hsla(0, 0%, 80%);
     font-size: 17px;
-
     text-align: center;
 }
 .score-details{
     text-align: center;
     padding: 10px;
 }
+
 /*summary container styles*/
 .summary-container{
     display: flex;
@@ -109,24 +114,19 @@ button:hover{
 }
 .summary-container h3{
     align-self: flex-start;
-    margin: 20px 0 20px 27px;
+    margin: 3px 0 20px 27px;
+    color: hsl(224, 30%, 27%);
 }
 
 /*summary box designs*/
-
-.result-cont .result-denom{
-    color:hsl(224, 30%, 60%);
-}
-.result-cont span{
+#score-span{
     color: hsl(224, 30%, 32%);
     font-weight: 700;
 }
 #reaction{
-    /* hsl(224, 30%, 27%) */
 color: hsl(0, 100%, 45%);
 background-color:hsl(0, 100%, 96%);
 }
-/*hsla(354, 100%, 98%)*/
 #memory{
 color: hsl(39, 100%, 56%);
 background-color: hsla(39, 100%, 96%);
@@ -174,24 +174,19 @@ background-color: hsla(234, 85%, 96%)
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
     .summary-container{
         padding: 25px 0;
     }
   }
-
-  @media only screen and (max-width: 520px) and (min-width: 320px){
-    body {
-      background-color: lightpink;
-      
-    }
-    main{
-    }
+  @media only screen and (max-width: 520px) and (min-width: 500px){
     .summary-container{
         padding: 25px 0;
-        width:100%;
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 520px) and (min-width: 320px){
+    .summary-container{
+        padding: 25px 0;
     }
     .main-container{
         width:100%;
@@ -204,13 +199,8 @@ background-color: hsla(234, 85%, 96%)
         width: 100%;
     }
   }
+
   @media only screen and (max-width: 320px){
-    body {
-      background-color: lightyellow;
-      
-    }
-    main{
-    }
     .score-cont{
         width: 184px;
     }
