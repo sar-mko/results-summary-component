@@ -89,7 +89,6 @@ p{
     flex-direction: row;
     padding: 15px 12px;
     margin: 8px 0;
-    background-color: cadetblue;
     width: 85%;
     border-radius: 11px;
 }
@@ -107,6 +106,7 @@ button{
     padding: 14px;
     width: 85%;
     margin: 10px 0;
+    font-size: 16px;
 }
 button:hover{
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) ) ;

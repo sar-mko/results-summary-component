@@ -2,10 +2,7 @@
 
 This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## In progress
-Details coming soon.
-
-<!-- ## Table of contents
+## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -15,9 +12,7 @@ Details coming soon.
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -32,14 +27,13 @@ Users should be able to:
 
 ### Screenshot -->
 
-<!-- ![](./screenshot.jpg) -->
+![Desktop Preview](./assets/images/desktop-scrnshot.png)
+![Mobile Preview](./assets/images/mobile-scrnshot.png)
 
+### Links
 
-
-<!-- ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://sar-mko.github.io/results-summary-component/)
+<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
+- Live Site URL: [results-summary-component](https://sar-mko.github.io/results-summary-component/)
 
 ## My process
 
@@ -48,58 +42,29 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Javascript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+For the bonus task, I created the program to add the JSON data *after* framing and styling the entire page. So I figured out how to keep the styles I created while still creating new divs all within the fetch request. Used the createElement() and appendChild() methods to achieve this. As well as adding classes and ids I had previously named.
 
-To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const category = document.querySelector(".summary-container");
+
+    let div = document.createElement("div");
+      category.appendChild(div);
+      div.classList.add("result-cont");
+      div.id = section.category.toLowerCase();
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Want continue practicing building with JSON, to see other ways to work on a similar project, and how to apply it to more complex designs.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@sar-mko](https://www.frontendmentor.io/profile/sar-mko)
 
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
- -->
